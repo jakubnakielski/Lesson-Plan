@@ -29,7 +29,7 @@ body {
 }
 .teachers {
   position: absolute;
-  top: 50px;
+  top: 28px;
   right: 50px;
   min-height: 800px;
   width: 250px;
@@ -93,7 +93,8 @@ form < label {
   width: 80%;
   min-height: 50px;
   border: 2px solid var(--theme);
-  padding: 30px;
+  padding: 15px 30px;
+  line-height: 30px;
 }
 
 table {

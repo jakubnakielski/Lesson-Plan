@@ -1,9 +1,16 @@
-// const element = document.getElementById("");
+const button = document.getElementById("teachers__send");
 
-// const fill = ev => {
-//   ev.target.parentNode.classList.toggle(
-//     (ev.target.parentNode.style.color = "black")
-//   );
-// };
+const check = e => {
+  const checkboxes = document.querySelectorAll(".teachers__checkbox");
+  let checkboxesArray = new Array();
 
-// document.addEventListener("click", fill);
+  checkboxes.forEach(el => {
+    if (el.checked) {
+      checkboxesArray.push(el.value);
+    }
+  });
+
+  console.log(checkboxesArray);
+};
+
+button.addEventListener("click", check);
