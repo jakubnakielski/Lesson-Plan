@@ -1,7 +1,9 @@
 :root {
-  --purple: #8e44ad;
+  --theme: #27ae60;
   --grafit: #2c3e50;
-  --lightGray: #95a5a6;
+  --lightGray: #758586;
+  --paperGray: #a5b5b6;
+  --red: #c0392b;
 }
 *,
 *::after,
@@ -9,20 +11,70 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid grey;
 }
 body {
   background: var(--grafit);
   color: white;
   font-family: Open Sans;
 }
+.container {
+  width: 1200px;
+  min-height: 100vh;
+  margin: -30px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.teachers {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  min-height: 500px;
+}
+
+.teachers__send {
+  padding: 10px 15px;
+  cursor: pointer;
+  border: 2px solid var(--theme);
+  /* border-radius: 10px; */
+  background: none;
+  font-weight: 700;
+  color: white;
+  transition: 0.3s;
+}
+.teachers__send:hover {
+  background: var(--pur);
+  background: var(--theme);
+}
+.teachers__checkboxContainer {
+  height: 50px;
+  background: var(--theme);
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.teachers__checkbox {
+}
+/*---------------------------------*/
+.absentTeachers {
+  width: 80%;
+  min-height: 50px;
+  border: 2px solid var(--theme);
+  padding: 30px;
+}
 
 table {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 1000px;
+  border-spacing: 0;
+}
+td {
+  border: 1px solid var(--paperGray);
+}
+div {
+  overflow-x: auto;
+}
+table {
+  width: 80%;
   height: 500px;
 }
 caption {
@@ -30,7 +82,9 @@ caption {
   font-size: 1.6em;
   letter-spacing: 2px;
 }
-
+tr:nth-child(even) {
+  background-color: var(--lightGray);
+}
 .poniedzialek > tbody > tr > td:nth-child(1) {
   width: 90px;
   padding-left: 10px;
