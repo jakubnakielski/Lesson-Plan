@@ -96,6 +96,16 @@ form < label {
   padding: 15px 30px;
   line-height: 30px;
 }
+.absentTeachers__list {
+  margin: 15px 0 0 15px;
+}
+.absentTeachers__person {
+  cursor: pointer;
+  transition: 0.2s;
+}
+.absentTeachers__person:hover {
+  color: var(--theme);
+}
 
 table {
   border-spacing: 0;
