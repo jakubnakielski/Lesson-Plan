@@ -1,0 +1,49 @@
+:root {
+  --purple: #8e44ad;
+  --grafit: #2c3e50;
+  --lightGray: #95a5a6;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 1px solid grey;
+}
+body {
+  background: var(--grafit);
+  color: white;
+  font-family: Open Sans;
+}
+
+table {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1000px;
+  height: 500px;
+}
+caption {
+  padding: 20px 0;
+  font-size: 1.6em;
+  letter-spacing: 2px;
+}
+
+.poniedzialek > tbody > tr > td:nth-child(1) {
+  width: 90px;
+  padding-left: 10px;
+}
+.poniedzialek > tbody > tr > td:nth-child(2) {
+  width: 90px;
+  padding-left: 20px;
+}
+.poniedzialek > tbody > tr > td:nth-child(3) {
+  width: 540px;
+  padding-left: 20px;
+}
+.poniedzialek > tbody > tr > td:nth-child(4) {
+  width: 50px;
+  padding-left: 10px;
+}
