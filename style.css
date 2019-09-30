@@ -29,7 +29,7 @@ body {
 }
 .teachers {
   position: absolute;
-  top: 28px;
+  top: 20px;
   right: 50px;
   min-height: 800px;
   width: 250px;
@@ -119,7 +119,7 @@ tr:nth-child(even) {
   background-color: var(--lightGray);
 }
 .poniedzialek > tbody > tr > td:nth-child(1) {
-  width: 90px;
+  width: 120px;
   padding-left: 10px;
 }
 .poniedzialek > tbody > tr > td:nth-child(2) {
